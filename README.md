@@ -1,7 +1,5 @@
 # project-git-work
-## This is a creative project. 
-
-
+ 
 ![banner](image/banner.png)
 <h1 align="center">Hi 👋, I'm Mst Bilkis Naher</h1>
 <h3 align="center">A passionate frontend developer from London, UK.</h3>
