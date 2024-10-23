@@ -8,7 +8,7 @@ var shelter = {
     cats: ['Astrid', 'Lulu', 'Fluffy', 'Mouser'],
     apptMessage: function () {
         console.log(
-            'Emain us at meetafriend@wayadpets.com to make an appointmemt to meet your new friend.'
+            'Email us at meetafriend@wayadpets.com to make an appointmemt to meet your new friend.'
         );
     },
 };
@@ -17,14 +17,14 @@ var shelter = {
 
 function dogMessage() {
     console.log(
-        'Congrats!' + ChosenPet + ', a great dog , is available for adoption!'
+        'Congrats!' + chosenPet + ', a great dog , is available for adoption!'
     );
-    shelter.apptMessage();
+    shelter.Message();
 }
 
 function catMessage() {
     console.log(
-        'Congrats!' + ChosenPet + ', a great cat , is available for adoption!'
+        'Congrats!' + chosenPet + ', a great cat , is available for adoption!'
     );
     shelter.apptMessage();
 }
