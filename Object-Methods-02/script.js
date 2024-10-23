@@ -12,3 +12,19 @@ var shelter = {
         );
     },
 };
+
+// Debugging the code below
+
+function dogMessage() {
+    console.log(
+        'Congrats!' + ChosenPet + ', a great dog , is available for adoption!'
+    );
+    shelter.apptMessage();
+}
+
+function catMessage() {
+    console.log(
+        'Congrats!' + ChosenPet + ', a great cat , is available for adoption!'
+    );
+    shelter.apptMessage();
+}
