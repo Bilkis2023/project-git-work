@@ -28,3 +28,16 @@ function catMessage() {
     );
     shelter.apptMessage();
 }
+
+if(shelter.dogs.includes(chosenPet)){
+       dogMessage();
+}else if(shelter.cats.includes(chosenPet)){
+        catMessage();
+}else {
+    console.log('Its look like pet animel is not available' );
+    console.log('Checkout our featured dog' + 
+        shelter.dog[3] + ', checkout our featured cat' +
+        shelter.cat[1]
+    );
+}
+
