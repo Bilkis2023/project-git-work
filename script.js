@@ -65,3 +65,9 @@ var planet = {
 // Calls Objects Methods:
 planet.logFacts();
 planet.logPopulation();
+
+
+
+
+// This refers to the window
+console.log(this);
