@@ -71,3 +71,8 @@ planet.logPopulation();
 
 // This refers to the window
 console.log(this);
+
+// this refers to the window object
+function helloThis(){
+    console.log('inside this function, this is a ' + this);
+}
