@@ -33,3 +33,68 @@ console.log(planet['neibouringPlanets'][0]);
 
 planet.tellFunFact();
 planet.showWarning();
+
+
+// The default keyword "this" refers to the global object
+// In a browser, the global object is the window
+// Logs window
+// console.log(this);
+
+// When the keyword "this" is used inside of an object like planet, "this" belongs to the object.
+var planet = {
+    name: 'Earth',
+    age: '4.543 billion',
+    isPopulated: true,
+     population: '7.594 billion',
+     logFacts: function(){
+        // Logs "This planet name is Earth"
+        console.log("This planet name is" + this.name);
+        // Logs "This planet's age is 4.53 billion years"
+        console.log("This planet's age is" + this.age);
+     },
+     logPopulation : function(){
+        if(this.isPopulated){
+            // Logs "This planet's population is 4.53 billion"
+            console.log("This planet's population is" + this.population);
+        }else{
+            console.log('The planet is unpopulated');
+        }
+     },
+};
+
+// Calls Objects Methods:
+planet.logFacts();
+planet.logPopulation();
+
+
+
+
+// This refers to the window
+console.log(this);
+
+// this refers to the window object
+function helloThis(){
+    console.log('inside this function, this is a ' + this);
+}
+
+
+
+var numbers = [1,2,3,4];
+
+// Iterative methods
+numbers.forEach(lessThanThree);
+
+function lessThanThree(i){
+    if(i<3){
+        console.log(i.toString() + 'is less than 3' )
+    }else{
+        console.log(i.toString() + 'is Not less than 3');
+    }
+}
+
+
+var numbersDubled = numbers.map(multiply);
+function multiply(i){
+    return i*2;
+}
+console.log(numbersDubled);
