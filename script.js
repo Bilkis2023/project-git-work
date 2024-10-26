@@ -76,3 +76,18 @@ console.log(this);
 function helloThis(){
     console.log('inside this function, this is a ' + this);
 }
+
+
+
+var numbers = [1,2,3,4];
+
+// Iterative methods
+numbers.forEach(lessThanThree);
+
+function lessThanThree(i){
+    if(i<3){
+        console.log(i.toString() + 'is less than 3' )
+    }else{
+        console.log(i.toString() + 'is Not less than 3');
+    }
+}
