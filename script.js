@@ -91,3 +91,10 @@ function lessThanThree(i){
         console.log(i.toString() + 'is Not less than 3');
     }
 }
+
+
+var numbersDubled = numbers.map(multiply);
+function multiply(i){
+    return i*2;
+}
+console.log(numbersDubled);
