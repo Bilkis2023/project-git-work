@@ -40,4 +40,3 @@ if(shelter.dogs.includes(chosenPet)){
         shelter.cat[1]
     );
 }
-
