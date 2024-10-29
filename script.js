@@ -68,6 +68,45 @@ planet.logPopulation();
 
 
 
+// Logs window object using this
+console.log("this: ");
+console.log(this);
+
+// Logs the Document Object
+console.log("window.document: ");
+console.log(window.document);
+
+// Logs body of document
+console.log("document.body: ");
+console.log(document.body);
+
+// Logs root element of document.
+// Because document severs as the entry poing to a webpage content we use
+// document.documentElement to access the root element
+console.log(document.documentElement);
+
+// return head element of current document
+console.log(document.head);
+
+console.log("Document.body: ")
+console.log(document.body);
+console.log("element of Document Body: ")
+console.log(document.body.children);
+
+console.log("Second element of body: ");
+console.log(document.body.children[1]);
+
+console.log("Frist child of the ul: ")
+console.log(document.body.children[1].children[0]);
+
+// Accessing element by id
+var secondChildBody = document.getElementById("second-child-body");
+var firstChildUl = document.getElementById("first-child-ul");
+
+// setting style of element
+firstChildUl.style.color = "#e97451";
+
+
 
 // This refers to the window
 console.log(this);
